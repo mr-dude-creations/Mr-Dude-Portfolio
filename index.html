@@ -19,7 +19,7 @@
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
     
-    
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -40,6 +40,8 @@
         </div>
     </nav>
 
+
+    
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
@@ -72,7 +74,7 @@
                         
                         Giving my best to work is my priority. 
                         Thank You.</p>
-                    <a href="./Mr.Dude Resume.pdf">Download CV</a>
+                    <a href="./Mr.Dude Resume.pdf" target="_blank">Download CV</a>
                     <!-- <a href="https://rebrand.ly/Mr-Dude-Portfolio">Download CV</a> -->
                 </div>
             </div>
@@ -124,10 +126,10 @@
                     <div class="text">My creative skills & experiences.</div>
                     <p>I always try to work in an environment where I can
                         continue to learn and grow with experienced members and 
-                        explore my creativity. I love to try new and
-                        creative things.</p>
-                    <p>"Talent you have naturally. Skill is only developed by hours and hours and hours of beating on your craft."</p>
-                    <a href="#">Read more</a>
+                        explore my creativity.I love to try new and<span id="dots">....</span><span id="more">
+                        creative things.I do all Graphic Designing Work like Logo Desingning, Infographics, Banner, Posters, Bsuiness card, post designing and many more. I am also Video Editor, Data Analyst(Data Entry, Copy writing, MS office, Powerpoint Presentation). I am also a Web Developer.                    <br>"Talent you have naturally. Skill is only developed by hours and hours and hours of beating on your craft."</span> </p>
+                    
+                        <button type="button" id="read" onclick="read()">Read more</button>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -254,23 +256,23 @@
                         </div>
                     </div>
                 </div>
-                 <div class="column right">
+                <div class="column right">
                     <div class="text">Message me</div>
-                    <!--<form id="my-form" action="https://formsubmit.co/chshoaib3131@gmail.com" method="POST"> -->
-                    <form id="my-form" action="https://formspree.io/f/xrgroqwg" method="POST"> 
+                    <form id="my-form" action="https://formsubmit.co/chshoaib3131@gmail.com" method="POST">
+                    <!-- <form id="my-form" action="https://formspree.io/f/xrgroqwg" method="POST"> -->
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" name="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Your Email" name="email" required>
+                                <input type="email" placeholder="Email" name="email" required>
                             </div>
                         </div>
                         <div class="field">
                             <input type="text" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message..." name="message" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button id="status" type="submit">Send message</button> 
@@ -282,6 +284,7 @@
         </div>
         <div id="status"></div>
     </section>
+    <!-- <script src="contactForm.js"></script> -->
 
     <!-- footer section start -->
     <footer>
@@ -289,5 +292,31 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    
+    <script type="text/javascript">
+    var i=0;
+    function read(){
+        if(!i){
+            document.getElementById("more").style.
+            display ="inline";
+            document.getElementById("dots").style.
+            display ="none";
+            document.getElementById("read").innerHTML="Read less";
+            i=1;
+        }
+        else{
+            document.getElementById("more").style.
+            display ="none";
+            document.getElementById("dots").style.
+            display ="inline";
+            document.getElementById("read").innerHTML="Read more";
+            i=0;
+        }
+    }
+    </script>
+    
+    
+    </script>
 </body>
 </html>
