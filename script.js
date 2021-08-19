@@ -47,7 +47,17 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-
+    
+    
+    //custom scroll bar script
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
