@@ -72,10 +72,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .abouts, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.abouts .about-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -113,6 +114,40 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
+
+section .titles{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .titles::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .titles::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #38B5B0;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+
 
 /* navbar styling */
 .navbar{
@@ -340,6 +375,65 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/*My work section*/
+
+.abouts .titles::after{
+    content: "What i do";
+}
+
+.abouts .about-content .left{
+    width: 45%;
+}
+.abouts .about-content .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.abouts .about-content .right{
+    width: 55%;
+}
+.abouts .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.abouts .about-content .right .text span{
+    color: #38B5B0;
+}
+.abouts .about-content .right p{
+    text-align: justify;
+}
+.abouts .about-content .right a{
+    display: inline-block;
+    background: #38B5B0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #38B5B0;
+    transition: all 0.3s ease;
+}
+.abouts .about-content .right a:hover{
+    color: #38B5B0;
+    background: none;
+}
+
+
+/* between styling */
+
+
+#between{
+height: 50px;
+width: 100;
+background-color: #111;
+}
+
+
+
 
 /* skills section styling */
 
